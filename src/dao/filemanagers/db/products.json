@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "Reloj de pared",
+    "description": "Reloj vintage madera",
+    "price": 150,
+    "thumbnail": "https://bylmo.com/cdn/shop/products/reloj-de-pared-travel-siluetas-marron-12-x-12-cm_TR15M0000169-1.png?v=1674254353",
+    "code": "001",
+    "stock": "100"
+  },
+  {
+    "id": 2,
+    "title": "Lámpara",
+    "description": "lámpara de mesa Beige ",
+    "price": 180,
+    "thumbnail": "https://cloudfront.dico.com.mx/media/catalog/product/cache/e5313a059d82e47a0dd0c73b13afb6be/D/E/DEC62185S1-LAMPARA-DE-MESA-BEIGE-PARMA-250.png",
+    "code": "002",
+    "stock": "100"
+  },
+  {
+    "id": 3,
+    "title": "Florero1",
+    "description": "florero--1",
+    "price": 150,
+    "thumbnail": "https://png.pngtree.com/png-vector/20230224/ourmid/pngtree-wood-vase-with-sprout-png-image_6615802.png",
+    "code": "003",
+    "stock": "100"
+  },
+  {
+    "id": 4,
+    "title": "Florero2",
+    "description": "florero--2",
+    "price": 150,
+    "thumbnail": "https://png.pngtree.com/png-vector/20230224/ourmid/pngtree-wood-vase-with-sprout-png-image_6615802.png",
+    "code": "004",
+    "stock": "100"
+  },
+  {
+    "id": 6,
+    "title": "Florero4",
+    "description": "florero--4",
+    "price": 150,
+    "thumbnail": "https://png.pngtree.com/png-vector/20230224/ourmid/pngtree-wood-vase-with-sprout-png-image_6615802.png",
+    "code": "006",
+    "stock": "100"
+  }
+  
+]
