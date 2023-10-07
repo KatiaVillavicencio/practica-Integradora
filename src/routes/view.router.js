@@ -28,5 +28,9 @@ router.get("/chat",(req,res)=>{
     res.render("chat")
 })
 
+router.get("/upload",(req,res)=>{
+    res.render("upload")
+})
+
 
 export default router

@@ -6,6 +6,7 @@ import {__dirname} from "./utils.js"
 import handlebars from "express-handlebars"
 import {Server} from "socket.io"
 import "./dao/dbConfig.js"
+import uploadRouter from "./routes/upload.router.js"
 
 const app=express()
 const PORT=process.env.PORT||8080;
@@ -26,6 +27,9 @@ app.set("views",__dirname+"/views")
 app.use("/api",productRouter)
 app.use("/api",cartRouter)
 app.use("/",viewRouter)
+
+//mulyter http://localhost:8080/upload//
+app.use ("/upload", uploadRouter)
 
 
 const httpServer=app.listen(PORT,()=>{
@@ -79,7 +83,7 @@ socketServer.on("connection",async(socket)=>{
         // Guardar el mensaje utilizando el MessagesManager
         console.log(info)
         await messagesManager.createMessage(info);
-        // Enviar el mensaje a todos los usuarios conectados
+        // Envio el mensaje a todos los usuarios conectados
         socketServer.emit("chat", await messagesManager.getMessages());
         });
     

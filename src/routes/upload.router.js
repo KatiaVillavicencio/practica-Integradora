@@ -1,15 +1,15 @@
 import { Router } from "express";
-import { uploader } from "../managers/multer.js";
+import { uploader } from "./multer.js";
 
 const router = Router();
 
-let products = []; // Change variable name to 'products'
+let products = []; 
 
 router.get("/", (req, res) => {
   res.send({ status: "success", payload: products }); // Change 'prod' to 'products'
 });
 
-router.post("/upload", uploader.single("images"), (req, res) => {
+router.post("/upload", uploader.single("file"), (req, res) => {
 
   if (!req.file) {
     return res.status(400).send({ status: "error", error: "No se pudo guardar la imagen" });
@@ -21,3 +21,4 @@ router.post("/upload", uploader.single("images"), (req, res) => {
 });
 
 export default router;
+
