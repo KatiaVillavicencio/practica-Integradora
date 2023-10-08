@@ -5,7 +5,7 @@ const pmanager =new ProductManager()
 // import ProductManager from "../dao/filemanagers/controllers/productManager.js";
 // const pmanager=new ProductManager(__dirname+"/dao/filemanagers/db/products.json")
 
-const router =Router()
+const router = Router()
 
 
 // router.get("/",async(req,res)=>{

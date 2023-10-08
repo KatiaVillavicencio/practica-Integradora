@@ -6,7 +6,7 @@ const router = Router();
 let products = []; 
 
 router.get("/", (req, res) => {
-  res.send({ status: "success", payload: products }); // Change 'prod' to 'products'
+  res.send({ status: "success", payload: products }); 
 });
 
 router.post("/upload", uploader.single("file"), (req, res) => {

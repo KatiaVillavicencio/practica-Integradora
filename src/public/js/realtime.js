@@ -1,6 +1,5 @@
 const socketClient=io()
 
-
 socketClient.on("enviodeproducts",(obj)=>{
     updateProductList(obj)
 })
