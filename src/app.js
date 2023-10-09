@@ -28,7 +28,7 @@ app.use("/api",productRouter)
 app.use("/api",cartRouter)
 app.use("/",viewRouter)
 
-//mulyter http://localhost:8080/upload//
+//multer http://localhost:8080/upload//
 app.use ("/upload", uploadRouter)
 
 
