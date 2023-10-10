@@ -12,7 +12,20 @@ const productSchema= new mongoose.Schema({
     },
     stock: {
         type: Number,required: true
+    },
+    code: {
+        type: String,
+        unique: true,equired: true
+    },
+    stock: {
+        type: Number,
+        required: true
+    },
+    status: {
+        type: Boolean,
+        default: true 
     }
+
 })
 
 export const productsModel= mongoose.model(productCollection,productSchema)

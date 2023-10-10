@@ -2,7 +2,7 @@ import  {productsModel}  from "../models/products.model.js"
 
   export default class ProductManager{
 
-  
+
     getProducts = async () => {
       try {
           return await productsModel.find().lean();

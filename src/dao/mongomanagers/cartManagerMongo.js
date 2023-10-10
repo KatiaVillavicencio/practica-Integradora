@@ -1,4 +1,5 @@
 import {cartModel} from "../models/carts.model.js"
+import mongoose from "mongoose";
 
 import ProductManager from "../mongomanagers/productManagerMongo.js"
 

@@ -51,6 +51,7 @@ import MessagesManager from "./dao/mongomanagers/messageManagerMongo.js";
 const messagesManager = new MessagesManager();
 
 
+//socket.io
 
 socketServer.on("connection",async(socket)=>{
     console.log("cliente connectado con ID:",socket.id)
